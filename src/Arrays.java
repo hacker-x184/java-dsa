@@ -8,6 +8,7 @@ public class Arrays {
             System.out.print("Enter your Array value:- ");
             arr[i] = sc.nextInt();
         }
+        sc.close();
         return arr;
     }
     static void sumElement(int array[]){
@@ -74,7 +75,6 @@ public class Arrays {
             multArray(arr2);
             findMax(arr2);
         } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         System.out.println("Next Array start from here ");
@@ -84,6 +84,7 @@ public class Arrays {
         sumElement(arr1);
         multArray(arr1);
         findMax(arr1);
+        sc.close();
 
     }
 }
