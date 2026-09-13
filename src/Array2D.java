@@ -46,6 +46,28 @@ public class Array2D {
         }
         return result;
     }
+    static int maxElement(int[][] arr){
+        int maxElement = arr[0][0];
+        for (int row = 0;row<arr.length;row++){
+            for(int col =0 ; col<arr[row].length;col++){
+                if (maxElement<arr[row][col]){
+                    maxElement=arr[row][col];
+                }
+            }
+        }
+        return maxElement;
+    }
+    static int minElement(int[][] arr){
+        int minElement = arr[0][0];
+        for (int row = 0;row<arr.length;row++){
+            for(int col =0 ; col<arr[row].length;col++){
+                if (minElement>arr[row][col]){
+                    minElement=arr[row][col];
+                }
+            }
+        }
+        return minElement;
+    }
     public static void main(String[] args) {
         // Creating 2d Array/Matrix//
         int[][] arr = {{1,2,3},{12,23,33},{14,25,36},{17,24,39}};
@@ -59,9 +81,9 @@ public class Array2D {
         int[][] jacked_arr = {
             {1,2,3},
             {4,5,6,7,8,9,2},
-            {1,8,5,6,1},
+            {1,8,5,6,102},
             {2,2},
-            {0}
+            {-5}
         };
         System.out.println("Disply of the jacked array:--");
         // Display of the Jackred arr 
@@ -72,6 +94,10 @@ public class Array2D {
             System.out.println("");
         }
         System.out.println("Storing and printing the arr using the methods");
+        int maxValue = maxElement(jacked_arr);
+        int minValue = minElement(jacked_arr);
+        System.out.println("Here is the Max Value of the jacked Array :--" + maxValue);
+        System.out.println("Here is the Min Value of the jacked Array :--" + minValue);
         int[][] arr2d = inputArr();
         display(arr2d);
         int sumOfArr = sumArr(arr2d);
