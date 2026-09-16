@@ -1,9 +1,9 @@
 public class Student {
     // Attributes
-    public int id;
-    public int age; 
-    public  String name;
-    public int nos;
+    private int id;
+    private int age; 
+    private  String name;
+    private int nos;
     // Defult Constructure 
     // Attribute --> Garbage
     public Student(){
@@ -28,6 +28,9 @@ public class Student {
         this.name = srcobj.name;
         this.nos = srcobj.nos;
     }
+    public Student(Student objstu){
+       Student.id = objstr.id;
+}
     public void study(){
         System.out.println(name + " Studying");
     }
