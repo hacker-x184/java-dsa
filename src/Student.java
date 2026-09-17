@@ -29,6 +29,9 @@ public class Student {
         this.name = srcobj.name;
         this.nos = srcobj.nos;
     }
+    public Student(Student objstu){
+       Student.id = objstr.id;
+}
     public void study(){
         System.out.println(name + " Studying");
     }
