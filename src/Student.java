@@ -1,16 +1,17 @@
 public class Student {
     // Attributes
-    public int id;
-    public int age; 
-    public  String name;
-    public int nos;
+    private int id;
+    private int age; 
+    private  String name;
+    private int nos;
+    private String gf;
     // Defult Constructure 
     // Attribute --> Garbage
     public Student(){
         System.out.println("Defualt Constructure is created");
     }
     // Parametrried Constructure
-    public Student(int id,int age,String name,int nos){
+    public Student(int id,int age,String name,int nos,String gf){
         System.out.println("Parametarized Constructure is created");
         // Set Attribute
         this.id = id;
@@ -36,5 +37,20 @@ public class Student {
     }
     public void bunk(){
         System.out.println(name + " Bunking");
+    }
+    private void gfChatting(){
+        System.out.println(name + " Chatting");
+
+    }
+    public String getName(){
+        this.name = name;
+        return name;
+    }
+    public int getAge(){
+        this.age = age;
+        return age;
+    }
+    public void setAge(int age){
+        this.age = age;
     }
 }
