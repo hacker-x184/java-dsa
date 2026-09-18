@@ -6,5 +6,11 @@ public class main {
         c.startEngine();
         c.startAC();
         c.stopEngine();
+        motorCycle m = new motorCycle("Splender", "Xline", 2, "U","soft");
+        m.startEngine();
+        m.wheelie();
+        m.stopEngine();
+        
+
     }
 }
