@@ -18,6 +18,7 @@ public class Student {
         this.age = age;
         this.name = name;
         this.nos = nos;
+        this.gf = gf;
 
     }
     // Copy constrcture
@@ -29,9 +30,7 @@ public class Student {
         this.name = srcobj.name;
         this.nos = srcobj.nos;
     }
-    public Student(Student objstu){
-       Student.id = objstr.id;
-}
+
     public void study(){
         System.out.println(name + " Studying");
     }
@@ -43,14 +42,11 @@ public class Student {
     }
     private void gfChatting(){
         System.out.println(name + " Chatting");
-
     }
     public String getName(){
-        this.name = name;
         return name;
     }
     public int getAge(){
-        this.age = age;
         return age;
     }
     public void setAge(int age){
