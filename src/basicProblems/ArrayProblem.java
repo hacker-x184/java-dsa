@@ -2,6 +2,8 @@ package basicProblems;
 
 import java.util.Arrays;
 
+import static basicProblems.ArrayProblem2.revserArr;
+
 public class ArrayProblem {
     public  static double getAverage(int[] arr){
         double sum = 0;
@@ -97,6 +99,7 @@ public class ArrayProblem {
         System.out.println(minElement(arr));
         System.out.println(sumPositive(arr));
         System.out.println(sumNegative(arr));
+        System.out.println(revserArr(arr));
 
     }
 }
